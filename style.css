@@ -1,0 +1,56 @@
+/*
+ Theme Name:   Mecon Theme
+ Theme URI:    https://mecon-solutions.de
+ Description:  Custom Theme für Mecon Solutions, basierend auf Twenty Twenty-Five
+ Author:       Mecon Solutions
+ Author URI:   https://mecon-solutions.de
+ Template:     twentytwentyfive
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  mecon-theme
+*/
+
+/* === Core Details Block (Akkordeon) === */
+.wp-block-details summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	list-style: none;
+	font-family: var(--wp--preset--font-family--montserrat);
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--medium);
+	color: var(--wp--preset--color--contrast);
+	padding: 4px 0;
+}
+
+/* Standard-Dreieck entfernen */
+.wp-block-details summary::-webkit-details-marker,
+.wp-block-details summary::marker {
+	display: none;
+	content: "";
+}
+
+/* Roter Pfeil rechts */
+.wp-block-details summary::after {
+	content: "→";
+	font-size: 1.25rem;
+	color: var(--wp--preset--color--accent-1);
+	transition: transform 0.3s ease;
+	flex-shrink: 0;
+	margin-left: 16px;
+}
+
+/* Pfeil dreht sich bei offenem Zustand */
+.wp-block-details[open] summary::after {
+	transform: rotate(90deg);
+}
+
+/* Inhalt-Bereich */
+.wp-block-details > :not(summary) {
+	padding-top: 12px;
+	color: var(--wp--preset--color--contrast);
+	font-family: var(--wp--preset--font-family--source-sans-3);
+	font-weight: 400;
+}
