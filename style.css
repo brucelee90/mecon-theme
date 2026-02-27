@@ -54,3 +54,11 @@
 	font-family: var(--wp--preset--font-family--source-sans-3);
 	font-weight: 400;
 }
+
+.aspect-ratio-16-9 {
+	aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-1-1{
+	aspect-ratio: 1 / 1;
+}
