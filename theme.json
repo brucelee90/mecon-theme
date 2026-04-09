@@ -729,7 +729,12 @@
 		{
 			"area": "header",
 			"name": "header",
-			"title": "Header"
+			"title": "Header (Legacy)"
+		},
+		{
+			"area": "header",
+			"name": "navigation",
+			"title": "Navigation"
 		},
 		{
 			"area": "header",
